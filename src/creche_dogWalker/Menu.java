@@ -5,13 +5,22 @@ import java.util.InputMismatchException;
 import java.util.Optional;
 import java.util.Scanner;
 
+import creche_dogWalker.model.Cachorro;
+import creche_dogWalker.model.Gato;
+
 public class Menu {
 	static Scanner leia = new Scanner(System.in);
 	public static void main(String[] args) {
 		int id, opcao=0;
 		String nome, raca, tutor, sexo, tipo;
 		float valor;
-
+		
+		Cachorro c1 = new Cachorro(1, "Andressa", "(11)99999-8888", "Max", 5, 1,"Lhasa Apso");
+		c1.visualizar();
+		
+		Gato g1 = new Gato(2, "Vinicius", "(11)88888-9999", "Nino", 8, 2,"Persa  ");
+		g1.visualizar();
+		
 		while (true) {
 			System.out.println("*************************************************");
 			System.out.println("*              Creche DogWalker			*");
