@@ -18,5 +18,6 @@ public class Gato extends Animal{
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("*	Raca: " + this.raca + "				*");
+		System.out.println( "*************************************************\n\n");
 }
 }
